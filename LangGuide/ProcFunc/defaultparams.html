@@ -2,7 +2,7 @@
 
 <head>
 <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
-<param name="Keyword" value="Default arguments">
+<param name="Keyword" value="Default parameters">
 </object>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <title></title>
@@ -11,13 +11,14 @@
 
 <body>
 
-<H1>Default arguments</H1>
-<p>В заголовке подпрограммы можно использовать параметры по умолчанию. Для этого 
-достаточно после параметра поставить знак присваивания и значение. Если при вызове 
-не указать значение параметра по умолчанию, то будет использовано то значение, 
-которое указано в описании подпрограммы. Параметры по умолчанию должны 
-передаваться по значению и идти последними в списке параметров.</p>
-<p>Например:</p>
+<H1>Default parameters</H1>
+<p>
+It is possible to use default parameters in the header of a subroutine. In order to do that
+the default value of a parameter must be provided as follows:<br/>
+<i>&lt;parameter identifier&gt;: &lt;parameter type&gt; := &lt;default value&gt;</i>.<br/>
+If default arguments are omitted while invoking a function then their previously specified default values are used.
+Note that default parameters must always be passed by value, and they must be defined at the end of a parameter list.
+<p>For example:</p>
 <blockquote>
 	<p><code><b>procedure</b> PrintTwo(a,b: integer; delim: char
 	:= ' ');<br>
@@ -28,8 +29,7 @@
 	PrintTwo(3,5);<br>
 	PrintTwo(4,2,';');</code></p>
 </blockquote>
-<p>Все варианты вызова подпрограммы с параметрами по умолчанию могут участвовать 
-в разрешении <a href="overloading.html">перегрузки</a>.</p>
+<p>All available options of subroutine invocation are used to perform <a href="overloading.html">overload</a> resolution.</p>
 </body>
 
 </html>
