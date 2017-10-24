@@ -12,50 +12,49 @@
 <link rel="StyleSheet" href="../../default.css">
 </head>
 <body>
-<H1>Общие методы файловых типов</H1>
-<p>Для 
-всех стандартных файловых типов (<code>Text</code>,
+<H1>Common methods for file types</H1>
+<p>For all standart file types (<code>Text</code>,
 <code><strong>file</strong></code>,
 <code>
 <strong>file of</strong> T</code>) 
-определены следующие методы:</p>
+the following methods are defined:</p>
 &nbsp;<table border=0 CELLPADDING=5>
 	<tr>
 		<td>
 	<code><strong>procedure</strong> Write(a,b,...); </code><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Записывает в файл значения a, b, ...
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes values (a, b, ...) to a file 
 </td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> Name: string; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает имя файла</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the file name</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> FullName: string; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает полное имя файла</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the full file name</td>
 	</tr>
 	<tr>
 		<td>
 	<code><strong>function</strong> Eof: boolean; </code><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает True, если достигнут конец файла, и False в противном 
-	случае</td>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns True, if the end of the file is reached, and False otherwise 
+        </td>
 	</tr>
 	<tr>
 		<td>
 	<code><strong>procedure</strong> Close; </code><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Закрывает файл</td>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes the file</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>procedure</strong> Erase; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Удаляет файл</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deletes the file</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>procedure</strong> Rename(newname: string); </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Переименовывает файл, давая ему имя newname</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Renames the file to "newname"</td>
 	</tr>
 	</table>
 </body></html>
