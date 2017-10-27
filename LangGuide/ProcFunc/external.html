@@ -10,23 +10,20 @@
 </head>
 
 <body>
-
-<H1>Вызов подпрограмм из неуправляемой dll</H1>
-<p>Для вызова подпрограммы из неуправляемой dll
-(содержащей обычный, а не .NET-код) 
-используется конструкция вида:</p>
+<H1>Invocation of subroutines implemented in unmanaged DLLs</H1>
+<p>To call a subroutine implemented in an unmanaged DLL (contains native/machine code instead of .NET-code) the following code is used:</p>
 <blockquote>
-	<p><i>заголовок функции</i><code> <b>external</b>&nbsp;'</code><i>имя dll</i><code>'
-	<b>name</b>&nbsp;'</code><i>имя функции в dll</i><code>';&nbsp;</code></p>
+	<p><i>subroutine's header</i><code> <b>external</b>&nbsp;'</code><i>DLL's name</i><code>'
+	<b>name</b>&nbsp;'</code><i>function's name inside the DLL</i><code>';&nbsp;</code></p>
 </blockquote>
-<p>Например:</p>
+<p>For example:</p>
 <blockquote>
 	<p><code><b>function</b> MessageBox(h: integer; m,c: string; t: integer): 
 	integer; <br>
 	&nbsp; <b>external</b> 'User32.dll' <b>name</b> 'MessageBox';
 	<br>
 	...<br>
-	MessageBox(0,'Hello!','Сообщение',0);<br>
+	MessageBox(0,'Hello!','Message',0);<br>
 &nbsp;</code></p>
 </blockquote>
 <p>&nbsp;</p>
