@@ -11,15 +11,12 @@
 
 <body>
 
-<H1>Опережающее объявление</H1>
-<p>В некоторых ситуациях возникает необходимость вызвать 
-подпрограмму, описанную далее по тексту программы. Например, такая необходимость 
-возникает при косвенной рекурсии (подпрограмма <code>A</code> 
-вызывает подпрограмму <code>B</code>, а та в свою очередь 
-вызывает подпрограмму <code>A</code>). В этом случае 
-используется опережающее объявление подпрограммы, состоящее из ее заголовка, за 
-которым следует ключевое слово <b><code>forward</code></b>. 
-Например:</p>
+<H1>Forward declaration</H1>
+<p>In some cases it is necessary to call a subroutine that is defined later in the code. For instance, such a need
+occurs with indirect (mutual) recursion (subroutine <code>A</code> 
+calls subroutine <code>B</code> that in turn calls subroutine <code>A</code>). In this case
+forward declaration is used. It consists of a subroutine's header and <b><code>forward</code></b> keyword. 
+For example:</p>
 <blockquote>
 <pre>
 <code><b>procedure</b> B(i: integer); <b>forward</b>;
@@ -35,11 +32,9 @@ procedure</b> B(i: integer);
 <b>end</b>;</code>
 </pre>
 </blockquote>
-<p>Запрещено делать опережающее объявление 
-для уже описанной подпрограммы.</p>
-<p>Для методов ключевое слово <b><code>forward</code></b> запрещено. В нем нет 
-необходимости, потому что можно вызывать методы, определенные в теле класса 
-позднее. </p>
+<p>It is forbidden to use forward declaration for a function that is already defined.</p>
+<p><b><code>forward</code></b> keyword cannot be used with methods. There is no need for that because you can 
+use methods that are defined later in the body of a class. </p>
 </body>
 
 </html>
