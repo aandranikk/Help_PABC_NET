@@ -8,22 +8,23 @@
 
 <body>
 
-<H1>Ћокальные и глобальные переменные</H1>
-<p>ѕеременные, описанные в разделе описаний подпрограммы, называютс€ ее <i>
-локальными</i> переменными. ѕеременные же, описанные вне подпрограммы, 
-называютс€ <i>глобальными</i> по отношению к ней.</p>
-<p>ѕараметры подпрограммы считаютс€ ее локальными переменными.</p>
-<p>≈сли им€ локальной переменной совпадает с именем глобальной переменной, то 
-локальна€ переменна€ скрывает глобальную, так что к глобальной переменной нельз€ 
-обратитьс€ внутри подпрограммы. Ќапример:</p>
+<H1>Local and global variables</H1>
+<p>Variables defined inside a subroutine are called <i>local</i> variables. 
+Variables defined outside a subroutine 
+are called <i>global</i> variables (global relative to the subroutine).</p>
+<p>Subroutine's parameters are considered to be its local variables.</p>
+<p>If the name of a local variable matches the name of some global variable, 
+then the local variable shadows that global variable, 
+which makes it impossible to use the global variable within the subroutine. 
+For example:</p>
 <blockquote>
 <pre>
 <code><b>var </b>i: real;
 <b>procedure</b> p;
 <b>var </b>i: integer;
 <b>begin</b>
-  // к глобальной переменной i внутри процедуры нельз€ обратитьс€
-  i:=5; // присваивание локальной переменной i; ...
+  // global variable i is not accessible within this procedure
+  i:=5; // assignation to local variable i; ...
 <b>end</b>;</code>
 </pre>
 </blockquote>
