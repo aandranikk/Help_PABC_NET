@@ -1,4 +1,4 @@
-<HTML><HEAD><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+п»ї<HTML><HEAD><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
 <param name="Keyword" value="AdjacentGroup">
 <param name="Keyword" value="Batch">
 <param name="Keyword" value="Cartesian">
@@ -29,113 +29,113 @@
 <param name="Keyword" value="WriteLines">
 <param name="Keyword" value="ZipTuple"></object>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><link rel="StyleSheet" href="../../../default.css">
-</HEAD><body><H1>Методы расширения для sequence of T</H1>
+</HEAD><body><H1>РњРµС‚РѕРґС‹ СЂР°СЃС€РёСЂРµРЅРёСЏ РґР»СЏ sequence of T</H1>
 <table cellpadding=3><tr><td><code><b>function</b> AdjacentGroup&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Группирует одинаковые подряд идущие элементы, получая последовательность последовательностей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р“СЂСѓРїРїРёСЂСѓРµС‚ РѕРґРёРЅР°РєРѕРІС‹Рµ РїРѕРґСЂСЏРґ РёРґСѓС‰РёРµ СЌР»РµРјРµРЅС‚С‹, РїРѕР»СѓС‡Р°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№</td></tr>
 <tr><td><code><b>function</b> Batch&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; size: integer): <b>sequence <b>of</b></b> <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разбивает последовательность на серии длины size</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·Р±РёРІР°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РЅР° СЃРµСЂРёРё РґР»РёРЅС‹ size</td></tr>
 <tr><td><code><b>function</b> Batch&lt;T,Res&gt;(Self: <b>sequence <b>of</b></b> T; size: integer; proj: Func&lt;IEnumerable&lt;T&gt;,Res&gt;): <b>sequence <b>of</b></b> Res; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разбивает последовательность на серии длины size и применяет проекцию к каждой серии</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·Р±РёРІР°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РЅР° СЃРµСЂРёРё РґР»РёРЅС‹ size Рё РїСЂРёРјРµРЅСЏРµС‚ РїСЂРѕРµРєС†РёСЋ Рє РєР°Р¶РґРѕР№ СЃРµСЂРёРё</td></tr>
 <tr><td><code><b>function</b> Cartesian&lt;T,T1&gt;(Self: <b>sequence <b>of</b></b> T; b: <b>sequence <b>of</b></b> T1): <b>sequence <b>of</b></b> (T,T1); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Декартово произведение последовательностей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р”РµРєР°СЂС‚РѕРІРѕ РїСЂРѕРёР·РІРµРґРµРЅРёРµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№</td></tr>
 <tr><td><code><b>function</b> Cartesian&lt;T,T1,T2&gt;(Self: <b>sequence <b>of</b></b> T; b: <b>sequence <b>of</b></b> T1; func: (T,T1)-&gt;T2): <b>sequence <b>of</b></b> T2; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Декартово произведение последовательностей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р”РµРєР°СЂС‚РѕРІРѕ РїСЂРѕРёР·РІРµРґРµРЅРёРµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№</td></tr>
 <tr><td><code><b>procedure</b> ForEach&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; action: T -&gt; ()); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Применяет действие к каждому элементу последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РџСЂРёРјРµРЅСЏРµС‚ РґРµР№СЃС‚РІРёРµ Рє РєР°Р¶РґРѕРјСѓ СЌР»РµРјРµРЅС‚Сѓ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>procedure</b> ForEach&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; action: (T,integer) -&gt; ()); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Применяет действие к каждому элементу последовательности, зависящее от номера элемента</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РџСЂРёРјРµРЅСЏРµС‚ РґРµР№СЃС‚РІРёРµ Рє РєР°Р¶РґРѕРјСѓ СЌР»РµРјРµРЅС‚Сѓ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё, Р·Р°РІРёСЃСЏС‰РµРµ РѕС‚ РЅРѕРјРµСЂР° СЌР»РµРјРµРЅС‚Р°</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: <b>sequence <b>of</b></b> integer): <b>sequence <b>of</b></b> integer; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: <b><b>array</b> <b>of</b></b> integer): <b>sequence <b>of</b></b> integer; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: List&lt;integer&gt;): <b>sequence <b>of</b></b> integer; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: LinkedList&lt;integer&gt;): <b>sequence <b>of</b></b> integer; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: <b>sequence <b>of</b></b> real): <b>sequence <b>of</b></b> real; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: <b><b>array</b> <b>of</b></b> real): <b>sequence <b>of</b></b> real; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: List&lt;real&gt;): <b>sequence <b>of</b></b> real; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental(Self: LinkedList&lt;real&gt;): <b>sequence <b>of</b></b> real; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> Incremental&lt;T,T1&gt;(Self: <b>sequence <b>of</b></b> T; func: (T,T)-&gt;T1): <b>sequence <b>of</b></b> T1; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности. В качестве функции разности используется func</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё. Р’ РєР°С‡РµСЃС‚РІРµ С„СѓРЅРєС†РёРё СЂР°Р·РЅРѕСЃС‚Рё РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ func</td></tr>
 <tr><td><code><b>function</b> Incremental&lt;T,T1&gt;(Self: <b>sequence <b>of</b></b> T; func: (T,T,integer)-&gt;T1): <b>sequence <b>of</b></b> T1; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность разностей соседних элементов исходной последовательности. В качестве функции разности используется func</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЂР°Р·РЅРѕСЃС‚РµР№ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ РёСЃС…РѕРґРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё. Р’ РєР°С‡РµСЃС‚РІРµ С„СѓРЅРєС†РёРё СЂР°Р·РЅРѕСЃС‚Рё РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ func</td></tr>
 <tr><td><code><b>function</b> Interleave&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; a: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Чередует элементы двух последовательностей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р§РµСЂРµРґСѓРµС‚ СЌР»РµРјРµРЅС‚С‹ РґРІСѓС… РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№</td></tr>
 <tr><td><code><b>function</b> Interleave&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; a,b: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Чередует элементы трех последовательностей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р§РµСЂРµРґСѓРµС‚ СЌР»РµРјРµРЅС‚С‹ С‚СЂРµС… РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№</td></tr>
 <tr><td><code><b>function</b> Interleave&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; a,b,c: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Чередует элементы четырех последовательностей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р§РµСЂРµРґСѓРµС‚ СЌР»РµРјРµРЅС‚С‹ С‡РµС‚С‹СЂРµС… РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№</td></tr>
 <tr><td><code><b>function</b> JoinIntoString&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; delim: string): string; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Преобразует элементы последовательности в строковое представление, после чего объединяет их в строку, используя delim в качестве разделителя</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РџСЂРµРѕР±СЂР°Р·СѓРµС‚ СЌР»РµРјРµРЅС‚С‹ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РІ СЃС‚СЂРѕРєРѕРІРѕРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ, РїРѕСЃР»Рµ С‡РµРіРѕ РѕР±СЉРµРґРёРЅСЏРµС‚ РёС… РІ СЃС‚СЂРѕРєСѓ, РёСЃРїРѕР»СЊР·СѓСЏ delim РІ РєР°С‡РµСЃС‚РІРµ СЂР°Р·РґРµР»РёС‚РµР»СЏ</td></tr>
 <tr><td><code><b>function</b> JoinIntoString&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): string; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Преобразует элементы последовательности в строковое представление, после чего объединяет их в строку, используя пробел в качестве разделителя</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РџСЂРµРѕР±СЂР°Р·СѓРµС‚ СЌР»РµРјРµРЅС‚С‹ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РІ СЃС‚СЂРѕРєРѕРІРѕРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ, РїРѕСЃР»Рµ С‡РµРіРѕ РѕР±СЉРµРґРёРЅСЏРµС‚ РёС… РІ СЃС‚СЂРѕРєСѓ, РёСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕР±РµР» РІ РєР°С‡РµСЃС‚РІРµ СЂР°Р·РґРµР»РёС‚РµР»СЏ</td></tr>
 <tr><td><code><b>function</b> LastMaxBy&lt;T, TKey&gt;(Self: <b>sequence <b>of</b></b> T; selector: T -&gt; TKey): T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последний элемент последовательности с максимальным значением ключа</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё СЃ РјР°РєСЃРёРјР°Р»СЊРЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј РєР»СЋС‡Р°</td></tr>
 <tr><td><code><b>function</b> LastMinBy&lt;T, TKey&gt;(Self: <b>sequence <b>of</b></b> T; selector: T -&gt; TKey): T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последний элемент последовательности с минимальным значением ключа</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј РєР»СЋС‡Р°</td></tr>
 <tr><td><code><b>function</b> MaxBy&lt;T, TKey&gt;(Self: <b>sequence <b>of</b></b> T; selector: T -&gt; TKey): T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает первый элемент последовательности с максимальным значением ключа</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё СЃ РјР°РєСЃРёРјР°Р»СЊРЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј РєР»СЋС‡Р°</td></tr>
 <tr><td><code><b>function</b> MinBy&lt;T, TKey&gt;(Self: <b>sequence <b>of</b></b> T; selector: T -&gt; TKey): T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает первый элемент последовательности с минимальным значением ключа</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј РєР»СЋС‡Р°</td></tr>
 <tr><td><code><b>function</b> Numerate&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> (integer,T); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нумерует последовательность с единицы</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РќСѓРјРµСЂСѓРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЃ РµРґРёРЅРёС†С‹</td></tr>
 <tr><td><code><b>function</b> Numerate&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; from: integer): <b>sequence <b>of</b></b> (integer,T); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нумерует последовательность с номера from</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РќСѓРјРµСЂСѓРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЃ РЅРѕРјРµСЂР° from</td></tr>
 <tr><td><code><b>function</b> Pairwise&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> (T,T); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Превращает последовательность в последовательность пар соседних элементов</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РџСЂРµРІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РІ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РїР°СЂ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ</td></tr>
 <tr><td><code><b>function</b> Pairwise&lt;T,Res&gt;(Self: <b>sequence <b>of</b></b> T; func:(T,T)-&gt;Res): <b>sequence <b>of</b></b> Res; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Превращает последовательность в последовательность пар соседних элементов, применяет func к каждой паре полученных элементов и получает новую последовательность</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РџСЂРµРІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РІ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РїР°СЂ СЃРѕСЃРµРґРЅРёС… СЌР»РµРјРµРЅС‚РѕРІ, РїСЂРёРјРµРЅСЏРµС‚ func Рє РєР°Р¶РґРѕР№ РїР°СЂРµ РїРѕР»СѓС‡РµРЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ Рё РїРѕР»СѓС‡Р°РµС‚ РЅРѕРІСѓСЋ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ</td></tr>
 <tr><td><code><b>function</b> Partition&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; cond: T-&gt;boolean): (<b>sequence <b>of</b></b> T,<b>sequence <b>of</b></b> T); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разделяет последовательности на две по заданному условию</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·РґРµР»СЏРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РЅР° РґРІРµ РїРѕ Р·Р°РґР°РЅРЅРѕРјСѓ СѓСЃР»РѕРІРёСЋ</td></tr>
 <tr><td><code><b>function</b> Partition&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; cond: (T,integer)-&gt;boolean): (<b>sequence <b>of</b></b> T,<b>sequence <b>of</b></b> T); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разделяет последовательности на две по заданному условию, в котором участвует индекс</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·РґРµР»СЏРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РЅР° РґРІРµ РїРѕ Р·Р°РґР°РЅРЅРѕРјСѓ СѓСЃР»РѕРІРёСЋ, РІ РєРѕС‚РѕСЂРѕРј СѓС‡Р°СЃС‚РІСѓРµС‚ РёРЅРґРµРєСЃ</td></tr>
 <tr><td><code><b>function</b> Print&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; delim: string): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выводит последовательность на экран, используя delim в качестве разделителя</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’С‹РІРѕРґРёС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РЅР° СЌРєСЂР°РЅ, РёСЃРїРѕР»СЊР·СѓСЏ delim РІ РєР°С‡РµСЃС‚РІРµ СЂР°Р·РґРµР»РёС‚РµР»СЏ</td></tr>
 <tr><td><code><b>function</b> Print&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выводит последовательность на экран, используя пробел в качестве разделителя</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’С‹РІРѕРґРёС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РЅР° СЌРєСЂР°РЅ, РёСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕР±РµР» РІ РєР°С‡РµСЃС‚РІРµ СЂР°Р·РґРµР»РёС‚РµР»СЏ</td></tr>
 <tr><td><code><b>function</b> Println&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; delim: string): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выводит последовательность на экран, используя delim в качестве разделителя, и переходит на новую строку</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’С‹РІРѕРґРёС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РЅР° СЌРєСЂР°РЅ, РёСЃРїРѕР»СЊР·СѓСЏ delim РІ РєР°С‡РµСЃС‚РІРµ СЂР°Р·РґРµР»РёС‚РµР»СЏ, Рё РїРµСЂРµС…РѕРґРёС‚ РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ</td></tr>
 <tr><td><code><b>function</b> Println&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выводит последовательность на экран, используя пробел качестве разделителя, и переходит на новую строку</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’С‹РІРѕРґРёС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РЅР° СЌРєСЂР°РЅ, РёСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕР±РµР» РєР°С‡РµСЃС‚РІРµ СЂР°Р·РґРµР»РёС‚РµР»СЏ, Рё РїРµСЂРµС…РѕРґРёС‚ РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ</td></tr>
 <tr><td><code><b>function</b> SkipLast&lt;T&gt;(self: <b>sequence <b>of</b></b> T; count: integer := 1): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последовательность без последних count элементов</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ Р±РµР· РїРѕСЃР»РµРґРЅРёС… count СЌР»РµРјРµРЅС‚РѕРІ</td></tr>
 <tr><td><code><b>function</b> Slice&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; from,step: integer): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает срез последовательности от номера from с шагом step &gt; 0</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃСЂРµР· РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РѕС‚ РЅРѕРјРµСЂР° from СЃ С€Р°РіРѕРј step &gt; 0</td></tr>
 <tr><td><code><b>function</b> Slice&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; from,step,count: integer): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает срез последовательности от номера from с шагом step &gt; 0 длины не более count</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃСЂРµР· РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РѕС‚ РЅРѕРјРµСЂР° from СЃ С€Р°РіРѕРј step &gt; 0 РґР»РёРЅС‹ РЅРµ Р±РѕР»РµРµ count</td></tr>
 <tr><td><code><b>function</b> Sorted&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает отсортированную по возрастанию последовательность</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅСѓСЋ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ</td></tr>
 <tr><td><code><b>function</b> SortedDescending&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает отсортированную по убыванию последовательность</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅСѓСЋ РїРѕ СѓР±С‹РІР°РЅРёСЋ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ</td></tr>
 <tr><td><code><b>function</b> SplitAt&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; ind: integer): (<b>sequence <b>of</b></b> T,<b>sequence <b>of</b></b> T); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разбивает последовательности на две в позиции ind</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·Р±РёРІР°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РЅР° РґРІРµ РІ РїРѕР·РёС†РёРё ind</td></tr>
 <tr><td><code><b>function</b> Tabulate&lt;T,T1&gt;(Self: <b>sequence <b>of</b></b> T; F: T-&gt;T1): <b>sequence <b>of</b></b> (T,T1); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Табулирует функцию последовательностью</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РўР°Р±СѓР»РёСЂСѓРµС‚ С„СѓРЅРєС†РёСЋ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊСЋ</td></tr>
 <tr><td><code><b>function</b> TakeLast&lt;T&gt;(Self: <b>sequence <b>of</b></b> T; count: integer): <b>sequence <b>of</b></b> T; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает последние count элементов последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕСЃР»РµРґРЅРёРµ count СЌР»РµРјРµРЅС‚РѕРІ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> ToHashSet&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): HashSet&lt;T&gt;; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает множество HashSet по данной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РјРЅРѕР¶РµСЃС‚РІРѕ HashSet РїРѕ РґР°РЅРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> ToLinkedList&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): LinkedList&lt;T&gt;; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает LinkedList по данной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ LinkedList РїРѕ РґР°РЅРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> ToSortedSet&lt;T&gt;(Self: <b>sequence <b>of</b></b> T): SortedSet&lt;T&gt;; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает множество SortedSet по данной последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’РѕР·РІСЂР°С‰Р°РµС‚ РјРЅРѕР¶РµСЃС‚РІРѕ SortedSet РїРѕ РґР°РЅРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> UnZipTuple&lt;T,T1&gt;(Self: <b>sequence <b>of</b></b> (T,T1)): (<b>sequence <b>of</b></b> T,<b>sequence <b>of</b></b> T1); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разъединяет последовательность двухэлементных кортежей на две последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·СЉРµРґРёРЅСЏРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РґРІСѓС…СЌР»РµРјРµРЅС‚РЅС‹С… РєРѕСЂС‚РµР¶РµР№ РЅР° РґРІРµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> UnZipTuple&lt;T,T1,T2&gt;(Self: <b>sequence <b>of</b></b> (T,T1,T2)): (<b>sequence <b>of</b></b> T,<b>sequence <b>of</b></b> T1,<b>sequence <b>of</b></b> T2); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разъединяет последовательность трехэлементных кортежей на три последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·СЉРµРґРёРЅСЏРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ С‚СЂРµС…СЌР»РµРјРµРЅС‚РЅС‹С… РєРѕСЂС‚РµР¶РµР№ РЅР° С‚СЂРё РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> UnZipTuple&lt;T,T1,T2,T3&gt;(Self: <b>sequence <b>of</b></b> (T,T1,T2,T3)): (<b>sequence <b>of</b></b> T,<b>sequence <b>of</b></b> T1,<b>sequence <b>of</b></b> T2,<b>sequence <b>of</b></b> T3); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разъединяет последовательность четырехэлементных кортежей на четыре последовательности</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р Р°Р·СЉРµРґРёРЅСЏРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ С‡РµС‚С‹СЂРµС…СЌР»РµРјРµРЅС‚РЅС‹С… РєРѕСЂС‚РµР¶РµР№ РЅР° С‡РµС‚С‹СЂРµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё</td></tr>
 <tr><td><code><b>function</b> WriteLines(Self: <b>sequence <b>of</b></b> string; fname: string): <b>sequence <b>of</b></b> string; <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выводит последовательность строк в файл</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Р’С‹РІРѕРґРёС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ СЃС‚СЂРѕРє РІ С„Р°Р№Р»</td></tr>
 <tr><td><code><b>function</b> ZipTuple&lt;T,T1&gt;(Self: <b>sequence <b>of</b></b> T; a: <b>sequence <b>of</b></b> T1): <b>sequence <b>of</b></b> (T,T1); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Объединяет две последовательности в последовательность двухэлементных кортежей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РћР±СЉРµРґРёРЅСЏРµС‚ РґРІРµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РІ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РґРІСѓС…СЌР»РµРјРµРЅС‚РЅС‹С… РєРѕСЂС‚РµР¶РµР№</td></tr>
 <tr><td><code><b>function</b> ZipTuple&lt;T,T1,T2&gt;(Self: <b>sequence <b>of</b></b> T; a: <b>sequence <b>of</b></b> T1; b: <b>sequence <b>of</b></b> T2): <b>sequence <b>of</b></b> (T,T1,T2); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Объединяет три последовательности в последовательность трехэлементных кортежей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РћР±СЉРµРґРёРЅСЏРµС‚ С‚СЂРё РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РІ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ С‚СЂРµС…СЌР»РµРјРµРЅС‚РЅС‹С… РєРѕСЂС‚РµР¶РµР№</td></tr>
 <tr><td><code><b>function</b> ZipTuple&lt;T,T1,T2,T3&gt;(Self: <b>sequence <b>of</b></b> T; a: <b>sequence <b>of</b></b> T1; b: <b>sequence <b>of</b></b> T2; c: <b>sequence <b>of</b></b> T3): <b>sequence <b>of</b></b> (T,T1,T2,T3); <b>extensionmethod</b>;</code>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Объединяет четыре последовательности в последовательность четырехэлементных кортежей</td></tr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РћР±СЉРµРґРёРЅСЏРµС‚ С‡РµС‚С‹СЂРµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РІ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ С‡РµС‚С‹СЂРµС…СЌР»РµРјРµРЅС‚РЅС‹С… РєРѕСЂС‚РµР¶РµР№</td></tr>
 </table></body></HTML>
