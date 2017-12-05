@@ -21,101 +21,96 @@
 <link rel="StyleSheet" href="../../default.css">
 </head>
 <body>
-<H1>Методы для текстовых файлов</H1>
-<p>Для 
-текстовых файлов (type <code>Text</code>) 
-определены следующие методы:</p>
+<H1>Methods for text files</H1>
+<p>For text files (type <code>Text</code>) 
+the following methods defined:</p>
 &nbsp;<table border=0 CELLPADDING=5>
 	<tr>
 		<td>
 	<code><strong>procedure</strong> Writeln(a,b,...); </code><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Записывает в файл значения a, b, ...
-		и осуществляет переход на следующую строку</td>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes values a, b, ... to the file
+		and makes a transition to the next line </td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadInteger: integer; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа integer, введенное из текстового файла</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an integer value entered from the text file</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadReal: real; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа real, введенное из текстового файла</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a value of type real entered from the text file</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadChar: char; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа char, введенное из текстового файла</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a char value entered from the text file</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadString: string; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа string, введенное из текстового файла, 
-		без перехода на следующую строку</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a string value entered from the text file 
+			without going to the next line</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadBoolean: boolean; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа boolean, введенное из текстового файла</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a boolean value entered from the text file</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadlnInteger: integer; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа integer, введенное из текстового файла, 
-		и переходит на следующую строку</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an integer value entered from the text file 
+		and moves to the next line</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadlnReal: real; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа real, введенное из текстового файла, и 
-		переходит на следующую строку</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a value of type real, entered from the text file, and
+		moves to the next line</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadlnChar: char; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа char, введенное из текстового файла, и 
-		переходит на следующую строку</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a char value entered from the text file, and
+		moves to the next line</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadlnString: string; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа string, введенное из текстового файла, 
-		и переходит на следующую строку</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a string value, entered from the text file,
+		and moves to the next line</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadlnBoolean: boolean; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает значение типа boolean, введенное из текстового файла, 
-		и переходит на следующую строку</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a boolean value, entered from the text file,
+		and moves to the next line</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> Eoln: boolean; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает True, если достигнут конец строки, и False в 
-		противном случае</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns True if the end of the line was reached, and false otherwise.</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> SeekEof: boolean; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пропускает пробельные символы, после чего возвращает True, если 
-		достигнут конец файла</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skips whitespace, then returns True, if the end of the file is reached</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> SeekEoln: boolean; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пропускает пробельные символы, после чего возвращает True, если 
-		достигнут конец строки в файле</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skips whitespace, then returns True if the end of the line in the file is reached</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>procedure</strong> Flush; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Записывает содержимое буфера файла на диск</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the contents of the file buffer to disk</td>
 	</tr>
 	<tr>
 		<td>
 		<code><strong>function</strong> ReadToEnd: string; </code><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Возвращает в виде строки содержимое файла от текущего положения 
-		до конца</td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the contents of a file from the current position to the end as a string</td>
 	</tr>
 	</table>
 </body></html>
