@@ -39,289 +39,289 @@
 
 <body>
 
-<H1>Общие стандартные процедуры и функции</H1>
+<H1>РћР±С‰РёРµ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РїСЂРѕС†РµРґСѓСЂС‹ Рё С„СѓРЅРєС†РёРё</H1>
 <table border="0" width="100%">
 	<!-- MSTableType="nolayout" -->
 	<tr>
-		<td width="21%" valign="top"><b>Имя и параметры</b></td>
-		<td width="13%" valign="top"><b>Процедура или функция</b></td>
-		<td width="14%" valign="top"><b>Типы параметров</b></td>
-		<td width="15%" valign="top"><b>Тип возвращаемого значения</b></td>
-		<td valign="top"><b>Действие</b></td>
+		<td width="21%" valign="top"><b>РРјСЏ Рё РїР°СЂР°РјРµС‚СЂС‹</b></td>
+		<td width="13%" valign="top"><b>РџСЂРѕС†РµРґСѓСЂР° РёР»Рё С„СѓРЅРєС†РёСЏ</b></td>
+		<td width="14%" valign="top"><b>РўРёРїС‹ РїР°СЂР°РјРµС‚СЂРѕРІ</b></td>
+		<td width="15%" valign="top"><b>РўРёРї РІРѕР·РІСЂР°С‰Р°РµРјРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ</b></td>
+		<td valign="top"><b>Р”РµР№СЃС‚РІРёРµ</b></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Read(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		переменные <a href="../Types/review.htm">простого типа</a> или типа <b><code>string</code></b></td>
+		РїРµСЂРµРјРµРЅРЅС‹Рµ <a href="../Types/review.htm">РїСЂРѕСЃС‚РѕРіРѕ С‚РёРїР°</a> РёР»Рё С‚РёРїР° <b><code>string</code></b></td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">вводит значения с клавиатуры в переменные <code>a</code>,
+		<td valign="top">РІРІРѕРґРёС‚ Р·РЅР°С‡РµРЅРёСЏ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ РІ РїРµСЂРµРјРµРЅРЅС‹Рµ <code>a</code>,
 		<code>b</code> 
 		...</td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Write(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		выражения <a href="../Types/review.htm">простого типа</a>, типа <b><code>string</code></b> или указатели</td>
+		РІС‹СЂР°Р¶РµРЅРёСЏ <a href="../Types/review.htm">РїСЂРѕСЃС‚РѕРіРѕ С‚РёРїР°</a>, С‚РёРїР° <b><code>string</code></b> РёР»Рё СѓРєР°Р·Р°С‚РµР»Рё</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">выводит значения <code>a</code>,
+		<td valign="top">РІС‹РІРѕРґРёС‚ Р·РЅР°С‡РµРЅРёСЏ <code>a</code>,
 		<code>b</code> 
-		... в окно вывода</td>
+		... РІ РѕРєРЅРѕ РІС‹РІРѕРґР°</td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Readln(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		переменные <a href="../Types/review.htm">простого типа</a> или типа <b><code>string</code></b></td>
+		РїРµСЂРµРјРµРЅРЅС‹Рµ <a href="../Types/review.htm">РїСЂРѕСЃС‚РѕРіРѕ С‚РёРїР°</a> РёР»Рё С‚РёРїР° <b><code>string</code></b></td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">вводит значения с клавиатуры в переменные <code>a</code>,
+		<td valign="top">РІРІРѕРґРёС‚ Р·РЅР°С‡РµРЅРёСЏ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ РІ РїРµСЂРµРјРµРЅРЅС‹Рµ <code>a</code>,
 		<code>b</code> 
-		..., после чего пропускает все оставшиеся символы в текущей 
-		строке ввода. Если параметры процедуры не 
-		указаны, то осуществляет паузу в выполнении программы до нажатия 
-		клавиши <b> Enter</b></td>
+		..., РїРѕСЃР»Рµ С‡РµРіРѕ РїСЂРѕРїСѓСЃРєР°РµС‚ РІСЃРµ РѕСЃС‚Р°РІС€РёРµСЃСЏ СЃРёРјРІРѕР»С‹ РІ С‚РµРєСѓС‰РµР№ 
+		СЃС‚СЂРѕРєРµ РІРІРѕРґР°. Р•СЃР»Рё РїР°СЂР°РјРµС‚СЂС‹ РїСЂРѕС†РµРґСѓСЂС‹ РЅРµ 
+		СѓРєР°Р·Р°РЅС‹, С‚Рѕ РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚ РїР°СѓР·Сѓ РІ РІС‹РїРѕР»РЅРµРЅРёРё РїСЂРѕРіСЂР°РјРјС‹ РґРѕ РЅР°Р¶Р°С‚РёСЏ 
+		РєР»Р°РІРёС€Рё <b> Enter</b></td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Writeln(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		выражения <a href="../Types/review.htm">простого типа</a>, типа <b><code>string</code></b> или указатели</td>
+		РІС‹СЂР°Р¶РµРЅРёСЏ <a href="../Types/review.htm">РїСЂРѕСЃС‚РѕРіРѕ С‚РёРїР°</a>, С‚РёРїР° <b><code>string</code></b> РёР»Рё СѓРєР°Р·Р°С‚РµР»Рё</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">выводит значения <code>a</code>,
+		<td valign="top">РІС‹РІРѕРґРёС‚ Р·РЅР°С‡РµРЅРёСЏ <code>a</code>,
 		<code>b</code> 
-		... в окно вывода и осуществляет переход на следующую строку. 
-		Если параметры процедуры не указаны, то выполняет только переход на 
-		следующую строку.</td>
+		... РІ РѕРєРЅРѕ РІС‹РІРѕРґР° Рё РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚ РїРµСЂРµС…РѕРґ РЅР° СЃР»РµРґСѓСЋС‰СѓСЋ СЃС‚СЂРѕРєСѓ. 
+		Р•СЃР»Рё РїР°СЂР°РјРµС‚СЂС‹ РїСЂРѕС†РµРґСѓСЂС‹ РЅРµ СѓРєР°Р·Р°РЅС‹, С‚Рѕ РІС‹РїРѕР»РЅСЏРµС‚ С‚РѕР»СЊРєРѕ РїРµСЂРµС…РѕРґ РЅР° 
+		СЃР»РµРґСѓСЋС‰СѓСЋ СЃС‚СЂРѕРєСѓ.</td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Abs(x)</code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code>, <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает абсолютное значение (модуль) <code>x</code></td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ Р°Р±СЃРѕР»СЋС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ (РјРѕРґСѓР»СЊ) <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Sqr(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code>, <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает квадрат <code>x</code></td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ РєРІР°РґСЂР°С‚ <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Sqrt(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает квадратный корень из <code>x</code></td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ РєРІР°РґСЂР°С‚РЅС‹Р№ РєРѕСЂРµРЅСЊ РёР· <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Sin(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает синус <code>x</code></td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ СЃРёРЅСѓСЃ <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Cos(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает косинус <code>x</code></td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ РєРѕСЃРёРЅСѓСЃ <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Ln(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает натуральный логарифм <code>x</code></td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ РЅР°С‚СѓСЂР°Р»СЊРЅС‹Р№ Р»РѕРіР°СЂРёС„Рј <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Exp(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает <code>e</code> в степени
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ <code>e</code> РІ СЃС‚РµРїРµРЅРё
 		<code>x</code> (<code>e</code>=2.718281...)
 		</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Arctan(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает арктангенс <code>x</code></td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ Р°СЂРєС‚Р°РЅРіРµРЅСЃ <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Power(x,y) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code>, <code>y</code> - <code>real</code></td>
 		<td width="15%" valign="top"> <code>real</code></td>
-		<td valign="top">возвращает <code>x</code> в степени
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ <code>x</code> РІ СЃС‚РµРїРµРЅРё
 		<code>y</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Round(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает результат округления <code>x</code> до ближайшего целого</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ СЂРµР·СѓР»СЊС‚Р°С‚ РѕРєСЂСѓРіР»РµРЅРёСЏ <code>x</code> РґРѕ Р±Р»РёР¶Р°Р№С€РµРіРѕ С†РµР»РѕРіРѕ</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Trunc(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает целую часть <code>х</code></td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ С†РµР»СѓСЋ С‡Р°СЃС‚СЊ <code>С…</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Int(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>real</code></td>
-		<td valign="top">возвращает целую часть <code>х</code></td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ С†РµР»СѓСЋ С‡Р°СЃС‚СЊ <code>С…</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Frac(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>real</code></td>
-		<td valign="top">возвращает дробную часть <code>х</code></td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ РґСЂРѕР±РЅСѓСЋ С‡Р°СЃС‚СЊ <code>С…</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Ord(x) </code></td>
-		<td width="13%" valign="top">функция</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
+		<td width="14%" valign="top"><code>x</code> - РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает номер значения порядкового типа</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ РЅРѕРјРµСЂ Р·РЅР°С‡РµРЅРёСЏ РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Chr(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code></td>
 		<td width="15%" valign="top"><code>char</code></td>
-		<td valign="top">возвращает символ с кодом <code>х</code></td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ СЃРёРјРІРѕР» СЃ РєРѕРґРѕРј <code>С…</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Odd(x)</code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code></td>
 		<td width="15%" valign="top"><code>boolean</code></td>
-		<td valign="top">возвращает <code>True</code>, если <code>х</code> - нечетное, и
-		<code>False</code> в противном случае</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ <code>True</code>, РµСЃР»Рё <code>С…</code> - РЅРµС‡РµС‚РЅРѕРµ, Рё
+		<code>False</code> РІ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Inc(x) </code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
+		<td width="14%" valign="top"><code>x</code> - РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Увеличивает <code>x</code> на 1</td>
+		<td valign="top">РЈРІРµР»РёС‡РёРІР°РµС‚ <code>x</code> РЅР° 1</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Dec(x) </code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
+		<td width="14%" valign="top"><code>x</code> - РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Уменьшает <code>x</code> на 1</td>
+		<td valign="top">РЈРјРµРЅСЊС€Р°РµС‚ <code>x</code> РЅР° 1</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Inc(x,n) </code>
 		</td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа,
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
+		<td width="14%" valign="top"><code>x</code> - РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°,
 		<code><br>
-		n</code> - целого типа</td>
+		n</code> - С†РµР»РѕРіРѕ С‚РёРїР°</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Увеличивает <code>x</code> на
+		<td valign="top">РЈРІРµР»РёС‡РёРІР°РµС‚ <code>x</code> РЅР°
 		<code>n</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Dec(x,n)
 		</code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа,
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
+		<td width="14%" valign="top"><code>x</code> - РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°,
 		<code><br>
-		n</code> - целого типа</td>
+		n</code> - С†РµР»РѕРіРѕ С‚РёРїР°</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Уменьшает <code>x</code> на
+		<td valign="top">РЈРјРµРЅСЊС€Р°РµС‚ <code>x</code> РЅР°
 		<code>n</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Pred(x) </code></td>
-		<td width="13%" valign="top">функция</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает предыдущее значение порядкового типа</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
+		<td width="14%" valign="top"><code>x</code> - РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ РїСЂРµРґС‹РґСѓС‰РµРµ Р·РЅР°С‡РµРЅРёРµ РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
 	</tr>
 
 	<tr>
 		<td width="21%" valign="top">
 		<code>Succ(x) </code></td>
-		<td width="13%" valign="top">функция</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает следующее значение порядкового типа</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
+		<td width="14%" valign="top"><code>x</code> - РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
+		<td width="15%" valign="top">СЃРѕРІРїР°РґР°РµС‚ СЃ С‚РёРїРѕРј РїР°СЂР°РјРµС‚СЂР°</td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ СЃР»РµРґСѓСЋС‰РµРµ Р·РЅР°С‡РµРЅРёРµ РїРѕСЂСЏРґРєРѕРІРѕРіРѕ С‚РёРїР°</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Random(x)</code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code></td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает случайное целое в диапазоне от
-		0 до <code>x-1</code> </td>
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ СЃР»СѓС‡Р°Р№РЅРѕРµ С†РµР»РѕРµ РІ РґРёР°РїР°Р·РѕРЅРµ РѕС‚
+		0 РґРѕ <code>x-1</code> </td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Random </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">С„СѓРЅРєС†РёСЏ</td>
 		<td width="14%" valign="top">&nbsp;</td>
 		<td width="15%" valign="top"><code>real</code></td>
-		<td valign="top">возвращает случайное вещественное в диапазоне
+		<td valign="top">РІРѕР·РІСЂР°С‰Р°РµС‚ СЃР»СѓС‡Р°Р№РЅРѕРµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ РІ РґРёР°РїР°Р·РѕРЅРµ
 		[0..1)</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Include(s,x) </code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>s</code> - множество, <code>x </code>- элемент, 
-		тип которого совместим с базовым типом множества</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
+		<td width="14%" valign="top"><code>s</code> - РјРЅРѕР¶РµСЃС‚РІРѕ, <code>x </code>- СЌР»РµРјРµРЅС‚, 
+		С‚РёРї РєРѕС‚РѕСЂРѕРіРѕ СЃРѕРІРјРµСЃС‚РёРј СЃ Р±Р°Р·РѕРІС‹Рј С‚РёРїРѕРј РјРЅРѕР¶РµСЃС‚РІР°</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">включает элемент <code>x</code> во множество <code>s</code></td>
+		<td valign="top">РІРєР»СЋС‡Р°РµС‚ СЌР»РµРјРµРЅС‚ <code>x</code> РІРѕ РјРЅРѕР¶РµСЃС‚РІРѕ <code>s</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Exclude(s,x)</code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>s</code> - множество, <code>x </code>- элемент, 
-		тип которого совместим с базовым типом множества</td>
+		<td width="13%" valign="top">РїСЂРѕС†РµРґСѓСЂР°</td>
+		<td width="14%" valign="top"><code>s</code> - РјРЅРѕР¶РµСЃС‚РІРѕ, <code>x </code>- СЌР»РµРјРµРЅС‚, 
+		С‚РёРї РєРѕС‚РѕСЂРѕРіРѕ СЃРѕРІРјРµСЃС‚РёРј СЃ Р±Р°Р·РѕРІС‹Рј С‚РёРїРѕРј РјРЅРѕР¶РµСЃС‚РІР°</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">исключает элемент <code>x</code> из множества <code>s</code></td>
+		<td valign="top">РёСЃРєР»СЋС‡Р°РµС‚ СЌР»РµРјРµРЅС‚ <code>x</code> РёР· РјРЅРѕР¶РµСЃС‚РІР° <code>s</code></td>
 	</tr>
 	</table>
 </body>
