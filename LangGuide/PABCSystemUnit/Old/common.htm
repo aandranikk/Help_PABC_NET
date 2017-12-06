@@ -39,289 +39,286 @@
 
 <body>
 
-<H1>Общие стандартные процедуры и функции</H1>
+<H1>Common standard procedures and functions</H1>
 <table border="0" width="100%">
 	<!-- MSTableType="nolayout" -->
 	<tr>
-		<td width="21%" valign="top"><b>Имя и параметры</b></td>
-		<td width="13%" valign="top"><b>Процедура или функция</b></td>
-		<td width="14%" valign="top"><b>Типы параметров</b></td>
-		<td width="15%" valign="top"><b>Тип возвращаемого значения</b></td>
-		<td valign="top"><b>Действие</b></td>
+		<td width="21%" valign="top"><b>Name and parameters</b></td>
+		<td width="13%" valign="top"><b>Procedure or function</b></td>
+		<td width="14%" valign="top"><b>Types of parameters</b></td>
+		<td width="15%" valign="top"><b>Type of returned value</b></td>
+		<td valign="top"><b>Description</b></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Read(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">procedure</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		переменные <a href="../Types/review.htm">простого типа</a> или типа <b><code>string</code></b></td>
+		variables of <a href="../Types/review.htm">primitive type</a> or type <b><code>string</code></b></td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">вводит значения с клавиатуры в переменные <code>a</code>,
+		<td valign="top">inputs values from the keyboard into variables <code>a</code>,
 		<code>b</code> 
 		...</td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Write(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">procedure</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		выражения <a href="../Types/review.htm">простого типа</a>, типа <b><code>string</code></b> или указатели</td>
+		expressions of <a href="../Types/review.htm">primitive type</a>, type <b><code>string</code></b> or pointers</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">выводит значения <code>a</code>,
+		<td valign="top">writes the values <code>a</code>,
 		<code>b</code> 
-		... в окно вывода</td>
+		... in the output window</td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Readln(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">procedure</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		переменные <a href="../Types/review.htm">простого типа</a> или типа <b><code>string</code></b></td>
+		variables of <a href="../Types/review.htm">primitive type</a> or type <b><code>string</code></b></td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">вводит значения с клавиатуры в переменные <code>a</code>,
+		<td valign="top">inputs values from the keyboard into variables <code>a</code>,
 		<code>b</code> 
-		..., после чего пропускает все оставшиеся символы в текущей 
-		строке ввода. Если параметры процедуры не 
-		указаны, то осуществляет паузу в выполнении программы до нажатия 
-		клавиши <b> Enter</b></td>
+		..., then ignores all remaining characters in the current 
+		entry line. If the procedure parameters are not 
+		specified, provides a pause in program execution until you press 
+		<b> Enter</b></td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Writeln(a,b,...)</code></td>
-		<td width="13%" valign="top">процедура</td>
+		<td width="13%" valign="top">procedure</td>
 		<td width="14%" valign="top"><code>a</code>,<code>b</code>,<code>c</code> - 
-		выражения <a href="../Types/review.htm">простого типа</a>, типа <b><code>string</code></b> или указатели</td>
+		expressions of <a href="../Types/review.htm">primitive type</a>, type <b><code>string</code></b> or pointers</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">выводит значения <code>a</code>,
+		<td valign="top">writes the values <code>a</code>,
 		<code>b</code> 
-		... в окно вывода и осуществляет переход на следующую строку. 
-		Если параметры процедуры не указаны, то выполняет только переход на 
-		следующую строку.</td>
+		... in the output window and skips to the next line.
+		If the parameters of the procedure are not specified, it only skips to the next line.</td>
 		</tr>
 	<tr>
 		<td width="21%" valign="top">
 <code>Abs(x)</code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code>, <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает абсолютное значение (модуль) <code>x</code></td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns an absolute value (module) <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Sqr(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code>, <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает квадрат <code>x</code></td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns a square <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Sqrt(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает квадратный корень из <code>x</code></td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns the square root of <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Sin(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает синус <code>x</code></td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns the sine <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Cos(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает косинус <code>x</code></td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns the cosine <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Ln(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает натуральный логарифм <code>x</code></td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns the natural logarithm of <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Exp(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает <code>e</code> в степени
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns Euler's number <code>e</code> raised to the power of
 		<code>x</code> (<code>e</code>=2.718281...)
 		</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Arctan(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code>, <code>complex</code></td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает арктангенс <code>x</code></td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns the arctangent of <code>x</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Power(x,y) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code>, <code>y</code> - <code>real</code></td>
 		<td width="15%" valign="top"> <code>real</code></td>
-		<td valign="top">возвращает <code>x</code> в степени
-		<code>y</code></td>
+		<td valign="top">returns <code>x</code> raised to the power
+		<code>y</code> </td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Round(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает результат округления <code>x</code> до ближайшего целого</td>
+		<td valign="top">returns the result of rounding <code>x</code> to the nearest integer</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Trunc(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает целую часть <code>х</code></td>
+		<td valign="top">returns the integer part of <code>�</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Int(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>real</code></td>
-		<td valign="top">возвращает целую часть <code>х</code></td>
+		<td valign="top">returns the integer part of <code>�</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Frac(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>real</code></td>
 		<td width="15%" valign="top"><code>real</code></td>
-		<td valign="top">возвращает дробную часть <code>х</code></td>
+		<td valign="top">returns the fractional part of <code>�</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Ord(x) </code></td>
-		<td width="13%" valign="top">функция</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
+		<td width="13%" valign="top">function</td>
+		<td width="14%" valign="top"><code>x</code> - ordinal type</td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает номер значения порядкового типа</td>
+		<td valign="top">returns the number of value of ordinal type</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Chr(x) </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code></td>
 		<td width="15%" valign="top"><code>char</code></td>
-		<td valign="top">возвращает символ с кодом <code>х</code></td>
+		<td valign="top">returns the character with code <code>�</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Odd(x)</code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code></td>
 		<td width="15%" valign="top"><code>boolean</code></td>
-		<td valign="top">возвращает <code>True</code>, если <code>х</code> - нечетное, и
-		<code>False</code> в противном случае</td>
+		<td valign="top">returns <code>True</code>, if <code>�</code> is odd, and
+		<code>False</code> otherwise</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Inc(x) </code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
+		<td width="13%" valign="top">procedure</td>
+		<td width="14%" valign="top"><code>x</code> - ordinal type</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Увеличивает <code>x</code> на 1</td>
+		<td valign="top">increases <code>x</code> by 1</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Dec(x) </code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
+		<td width="13%" valign="top">procedure</td>
+		<td width="14%" valign="top"><code>x</code> - ordinal type</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Уменьшает <code>x</code> на 1</td>
+		<td valign="top">decreases <code>x</code> by 1</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Inc(x,n) </code>
 		</td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа,
+		<td width="13%" valign="top">procedure</td>
+		<td width="14%" valign="top"><code>x</code> - ordinal type,
 		<code><br>
-		n</code> - целого типа</td>
+		n</code> - integer</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Увеличивает <code>x</code> на
+		<td valign="top">increases <code>x</code> by
 		<code>n</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Dec(x,n)
 		</code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа,
+		<td width="13%" valign="top">procedure</td>
+		<td width="14%" valign="top"><code>x</code> - ordinal type,
 		<code><br>
-		n</code> - целого типа</td>
+		n</code> - integer</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">Уменьшает <code>x</code> на
+		<td valign="top">decreases <code>x</code> by
 		<code>n</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Pred(x) </code></td>
-		<td width="13%" valign="top">функция</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает предыдущее значение порядкового типа</td>
+		<td width="13%" valign="top">function</td>
+		<td width="14%" valign="top"><code>x</code> - ordinal type</td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns previous value of ordinal type</td>
 	</tr>
 
 	<tr>
 		<td width="21%" valign="top">
 		<code>Succ(x) </code></td>
-		<td width="13%" valign="top">функция</td>
-		<td width="14%" valign="top"><code>x</code> - порядкового типа</td>
-		<td width="15%" valign="top">совпадает с типом параметра</td>
-		<td valign="top">возвращает следующее значение порядкового типа</td>
+		<td width="13%" valign="top">function</td>
+		<td width="14%" valign="top"><code>x</code> - ordinal type</td>
+		<td width="15%" valign="top">matches the parameter type</td>
+		<td valign="top">returns the next value of ordinal type</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Random(x)</code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top"><code>x</code> - <code>integer</code></td>
 		<td width="15%" valign="top"><code>integer</code></td>
-		<td valign="top">возвращает случайное целое в диапазоне от
-		0 до <code>x-1</code> </td>
+		<td valign="top">returns a random integer in the range from
+		0 to <code>x-1</code> </td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Random </code></td>
-		<td width="13%" valign="top">функция</td>
+		<td width="13%" valign="top">function</td>
 		<td width="14%" valign="top">&nbsp;</td>
 		<td width="15%" valign="top"><code>real</code></td>
-		<td valign="top">возвращает случайное вещественное в диапазоне
+		<td valign="top">returns a random integer in the range
 		[0..1)</td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Include(s,x) </code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>s</code> - множество, <code>x </code>- элемент, 
-		тип которого совместим с базовым типом множества</td>
+		<td width="13%" valign="top">procedure</td>
+		<td width="14%" valign="top"><code>s</code> - set, <code>x </code>- element of type compatible with the type of base set</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">включает элемент <code>x</code> во множество <code>s</code></td>
+		<td valign="top">includes the <code>x</code> element in the set <code>s</code></td>
 	</tr>
 	<tr>
 		<td width="21%" valign="top">
 		<code>Exclude(s,x)</code></td>
-		<td width="13%" valign="top">процедура</td>
-		<td width="14%" valign="top"><code>s</code> - множество, <code>x </code>- элемент, 
-		тип которого совместим с базовым типом множества</td>
+		<td width="13%" valign="top">procedure</td>
+		<td width="14%" valign="top"><code>s</code> - set, <code>x </code>- element of type compatible with the type of base set</td>
 		<td width="15%" valign="top">&nbsp;</td>
-		<td valign="top">исключает элемент <code>x</code> из множества <code>s</code></td>
+		<td valign="top">excludes the <code>x</code> element from the set <code>s</code></td>
 	</tr>
 	</table>
 </body>
